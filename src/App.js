@@ -1,20 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./routes/home/Home";
 import Navigation from "./routes/navigation/Navigation";
-import SignIn from "./routes/sign-in/Sign-in";
-
-const Shop = () => {
-  return <h1>I am the Shop Page</h1>;
-};
+import Home from "./routes/home/Home";
+import Authentication from "./routes/authentication/Authentication";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigation />}>
         <Route index element={<Home />} />
-        <Route path="shop" element={<Shop />} />
-        <Route path="sign-in" element={<SignIn />} />
+        <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>
   );
