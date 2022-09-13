@@ -71,5 +71,6 @@ export const createUserDocumentFromAuth = async (
   }
 };
 
+//Listener for AuthStateChange
 export const onAuthStateChangedListener = (callback) =>
   onAuthStateChanged(auth, callback);
